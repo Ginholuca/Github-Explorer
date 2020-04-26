@@ -48,7 +48,7 @@ const Dashboard: React.FC = () => {
       setInputError('Digite o autor/nome do repositório.')
       return
     }
-    try { 
+    try {
       // Adição de um novo repositório.
 
       const res = await api.get(`repos/${newRepo}`)
